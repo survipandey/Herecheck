@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather APP</title>
+  <link rel="stylesheet" href="weather1.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+</head>
+<body>
+  <main>
+    <h1 class="logo">Here'scheck</h1>
+
+    <div class="row" style="text-align: center;">
+      <form action="">
+        <input type="search" id="search" placeholder="search by location" />
+      </form>
+    </div>
+
+    <div class="row" id="weather"></div>
+
+   
+    <div class="row">
+      <canvas id="forecastChart" width="400" height="200" style="margin-top: 20px;"></canvas>
+    </div>
+
+    <!-- Petal container for animation -->
+    <div id="petal-container"></div>
+  </main>
+
+  <script src="weather.js"></script>
+</body>
+</html>
